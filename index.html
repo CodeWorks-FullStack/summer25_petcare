@@ -6,25 +6,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Petcare</title>
 </head>
 
 <!-- NOTE the body tag should contain all of the code you want to render inside of the webpage(viewport) -->
 
 <body>
-  <header>
+  <!-- ANCHOR examples -->
+  <div class="display-none">
+    <!-- NOTE divs are block elements -->
+    <div>
+      jeremy is the guy
+    </div>
+    <div>
+      he is so cool
+    </div>
+    <div>
+      🤠
+    </div>
+    <!-- NOTE spans are inline elements -->
+    <span>
+      I'm a span
+    </span>
+    <span>
+      Spans are cool
+    </span>
+  </div>
+
+  <!-- ANCHOR header -->
+  <!-- NOTE header is a parent -->
+  <header class="display-flex justify-content-space-between">
+    <!-- NOTE b is a child of header -->
     <b>🐾 Pet.Care</b>
+    <!-- NOTE nav is a sibling of b -->
     <nav>
-      <span>Home</span>
+      <!-- NOTE this works but it's bad -->
+      <!-- <span style="color: purple;">Home</span> -->
+      <span class="text-purple">Home</span>
       <span>About</span>
-      <span>Services</span>
+      <span class="text-purple">Services</span>
       <span>Products</span>
       <span>Trainers</span>
     </nav>
     <span>Sign Up</span>
   </header>
-
-  <main>
+  <!-- ANCHOR main -->
+  <main class="display-flex">
 
     <article>
       <!-- NOTE h1 is the largest heading element -->
@@ -50,38 +78,22 @@
     </aside>
   </main>
 
-  <footer>
-    <h2>Pups 🐶</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, expedita.</p>
-    <h2>Kittens 😺</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, expedita.</p>
-    <h2>Rats 🐀</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, expedita.</p>
+  <!-- ANCHOR footer -->
+  <footer class="display-flex">
+    <div>
+      <h2>Pups 🐶</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, expedita.</p>
+    </div>
+    <div>
+      <h2>Kittens 😺</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, expedita.</p>
+    </div>
+    <div>
+      <h2>Rats 🐀</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, expedita.</p>
+    </div>
   </footer>
 
-
-
-
-
-  <div>
-    <!-- NOTE divs are block elements -->
-    <div>
-      jeremy is the guy
-    </div>
-    <div>
-      he is so cool
-    </div>
-    <div>
-      🤠
-    </div>
-    <!-- NOTE spans are inline elements -->
-    <span>
-      I'm a span
-    </span>
-    <span>
-      Spans are cool
-    </span>
-  </div>
 </body>
 
 </html>

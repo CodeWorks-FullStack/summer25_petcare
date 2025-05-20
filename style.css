@@ -1,0 +1,39 @@
+/* NOTE this is the comment character for CSS */
+
+/* NOTE this element selector applies styles to all tags that are spans */
+/* span {
+  color: purple;
+  } */
+
+
+header {
+  border-bottom: 3px solid black;
+}
+
+footer {
+  justify-content: space-evenly;
+}
+
+footer div {
+  width: 25%;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+/* NOTE classes can be named whatever you want (but should be something that makes sense). They are denoted as a class in css by starting the selector with a '.'. You apply classes by using a class attribute on an HTML element  */
+.text-purple {
+  /* text color */
+  color: #713EDD;
+  /* underlines text  */
+  text-decoration: underline;
+}
