@@ -5,17 +5,77 @@
   color: purple;
   } */
 
+:root {
+  --dark-purple: #16063B;
+  --darkest-purple: #1F2130;
+  --purple: #5209ec;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  justify-content: space-between;
+}
+
+header,
+main {
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
 
 header {
   border-bottom: 3px solid black;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 5px;
+}
+
+header b {
+  font-size: 1.6rem;
 }
 
 footer {
   justify-content: space-evenly;
+  background-color: var(--darkest-purple);
+  color: whitesmoke;
+  padding: 20px 0;
+}
+
+nav {
+  gap: 2rem;
 }
 
 footer div {
   width: 25%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
+/* NOTE select all immediate children regardless of tag type */
+main>* {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+
 }
 
 .display-none {
@@ -30,10 +90,21 @@ footer div {
   justify-content: space-between;
 }
 
+.purple-button {
+  background-color: var(--purple);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.text-shadow {
+  text-shadow: 0 5px 6px #999797;
+}
+
 /* NOTE classes can be named whatever you want (but should be something that makes sense). They are denoted as a class in css by starting the selector with a '.'. You apply classes by using a class attribute on an HTML element  */
 .text-purple {
   /* text color */
-  color: #713EDD;
+  color: var(--purple);
   /* underlines text  */
   text-decoration: underline;
 }
